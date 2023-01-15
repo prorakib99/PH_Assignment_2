@@ -1,0 +1,99 @@
+/* Common Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.header-section {
+    background: rgba(255, 144, 14, 0.1);
+    padding-top: 50px;
+    padding-bottom: 45px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+}
+
+/* Navigation Styles */
+.nav {
+    display: flex;
+}
+
+.nav li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+.nav a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #424242;
+    padding: 0 10px;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.hero-content {
+    width: 60%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    color: #131313;
+}
+.hero-description {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.btn-primary {
+    background: #FF900E;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    border: none;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+.hero-image img {
+    width: 100%;
+}
