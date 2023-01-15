@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -25,6 +26,7 @@ a {
     background: rgba(255, 144, 14, 0.1);
     padding-top: 50px;
     padding-bottom: 45px;
+    display: flex;
 }
 
 .header {
@@ -153,6 +155,10 @@ a {
     padding-left: 20px;
 }
 
+.experience-container {
+    display: flex;
+    flex-direction: column;
+}
 .experience {
     padding: 30px;
     padding-right: 42px;
@@ -272,4 +278,104 @@ a {
     font-size: 20px;
     line-height: 23px;
     color: #424242;
+}
+
+/* Responsive Styles */
+
+/* For Mobile Device */
+@media only screen and (max-width: 576px) {
+    .header-section {
+        padding-bottom: 20px;
+    }
+    .header {
+        justify-content: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .nav {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .hero-section {
+        padding-top: 50px;
+    }
+    .hero-content {
+        width: 100%;
+    }
+    .hero-title {
+        font-size: 42px;
+        line-height: 1.2;
+    }
+    .section-title {
+        font-size: 36px;
+    }
+    .features-section {
+        width: 100%;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+    .feature-image-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .feature-content-section {
+        text-align: center;
+    }
+    .experience-section {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+    .facts-section {
+        text-align: center;
+        padding-bottom: 100px;
+    }
+
+    .facts-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding-top: 40px;
+    }
+    .experience-image {
+        padding-top: 0;
+        margin-bottom: -30px;
+    }
+    .experience-image img {
+        width: 100%;
+    }
+    .experience-btn {
+        left: 35px;
+        bottom: 85px;
+    }
+    .experience-btn-text {
+        font-size: 48px;
+        line-height: 1;
+    }
+    .sponspors-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .footer-section {
+        padding: 20px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .footer-content {
+        line-height: 1.7;
+    }
+}
+
+/* For Tablet Device */
+@media only screen (min-width: 577px) and (max-width: 768px) {
+    
+}
+
+/* Container Responsive */
+@media only screen and (max-width: 1440px) {
+    .container {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
