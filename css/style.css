@@ -79,10 +79,12 @@ a {
     line-height: 75px;
     color: #131313;
 }
+
 .hero-description {
     margin-top: 20px;
     margin-bottom: 30px;
 }
+
 .btn-primary {
     background: #FF900E;
     border-radius: 8px;
@@ -94,6 +96,45 @@ a {
     padding: 20px 25px;
     cursor: pointer;
 }
+
 .hero-image img {
     width: 100%;
+}
+
+/* Features Section Styles */
+.features-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 76px;
+    padding-top: 85px;
+    width: 93%;
+    margin: 0 auto;
+}
+
+.feature-image-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+    margin-bottom: 24px;
+}
+
+.light-color {
+    color: #727272;
+}
+
+.primary-color {
+    color: #FF900E;
+}
+
+.section-description {
+    color: #727272;
+    margin-bottom: 30px;
 }
